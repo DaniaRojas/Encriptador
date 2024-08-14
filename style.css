@@ -1,0 +1,238 @@
+* {
+    padding: 0px;
+    margin:0px;
+}
+
+.contenedor{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #F3F5FC;
+}
+
+.logo{
+    width: 120px;
+    height: 48px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.texto{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #F3F5FC;
+}
+
+.texto::placeholder{
+    color: #0A3871;
+}
+
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+.condiciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.condiciones p{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.Encriptado{
+    align-items: center;
+    background-color: #0A3871;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Inter";
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+}
+
+.Desencriptado{
+    align-items: center;
+    background-color: #D8DFE8;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #0A3871;
+    font-family: "Inter";
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+}
+
+.Encriptado:hover,
+.Desencriptado:hover{
+    margin: 0.3%;
+    width: 24%;
+    padding: 1.8%;
+}
+
+.proceso_encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.mensaje_encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje_encriptado h2{
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;  
+}
+
+.mensaje_encriptado p{
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057; 
+}
+    
+.proceso_encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+@media (max-width: 57.5em) {
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+    }
+    .encriptador {
+        width: 100%;
+    }
+    .texto {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 15%;
+    }
+    .condiciones {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .condiciones p {
+        font-size: 16px;
+    }
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .Encriptado, 
+    .Desencriptado {
+        width: 48%;
+        border-radius: 16px;
+    }
+    .Encriptado:hover, .Desencriptado:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .proceso_encriptado {
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensaje_encriptado {
+        width: 100%;
+        top: 5%;
+    }
+    .proceso_encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+    .logo{
+        width: 31.09px;
+        height: 50.58px;
+        top: 73.42px;
+        left: 10%;
+    }
+    
+}
